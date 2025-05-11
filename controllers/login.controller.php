@@ -11,8 +11,8 @@
             'senha' => ['required']
         ], $_POST);
 
-        if($validacao->naoPassou('login')) {
-            header('location: /login');
+        if($validacao->naoPassou()) {
+            view('login');
             
             exit();
         }
