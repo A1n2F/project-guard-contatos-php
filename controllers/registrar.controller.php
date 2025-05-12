@@ -1,18 +1,19 @@
 <?php
     
-    require '../Validacao.php';
+    require '../Core/Validacao.php';
 
     if($_SERVER['REQUEST_METHOD'] == 'POST') {
+        $database = new Core\Database($config['database']);
 
-        $validacao = Validacao::validar([
+        $validacao = Core\Validacao::validar([
             'nome' => ['required'],
-            'email' => ['required', 'email', 'confirmed', 'unique:usuarios'],
+            'email' => ['required', 'email', 'unique:usuarios'],
             'senha' => ['required', 'min:8', 'max:30', 'strong']
         ], $_POST);
 
-        if($validacao->naoPassou('registrar')) {
-            header('location: /login');
-            
+        if($validacao->naoPassou()) {
+            view('registrar');
+
             exit();
         }
 
