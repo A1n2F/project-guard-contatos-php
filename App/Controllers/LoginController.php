@@ -3,7 +3,9 @@
 namespace App\Controllers;
 
 class LoginController {
-    public function index() {}
+    public function index() {
+        return view('login');
+    }
 
     public function login() {}
 }
