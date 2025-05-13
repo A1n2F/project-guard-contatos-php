@@ -8,7 +8,9 @@ class DashboardController {
             return redirect('/login');
         }
 
-        echo "Bem vindo, " . auth()->nome;
+        return view('dashboard', [
+            'user' =>auth()
+        ]);
     }
 }
 
