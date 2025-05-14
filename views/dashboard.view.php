@@ -21,17 +21,115 @@
         </div>
     </div>
 
-    <div class="w-full h-screen py-20">
+    <div class="w-full h-screen py-10">
         <div class="bg-[#1B1B1B] w-full h-full rounded-4xl p-10">
             <div class="flex items-center justify-between">
                 <h1 class="text-gray-200 text-3xl font-bold">Lista de contatos</h1>
+                <form action="">
+                    <div class="flex items-center gap-3">
+                        <input 
+                            name="pesquisar" 
+                            type="text" 
+                            placeholder="Pesquisar" 
+                            class="p-3 w-[420px] text-gray-300 border border-gray-500 rounded-xl" 
+                        />
 
-                <div class="flex items-center gap-3">
-                    <input type="text" placeholder="Pesquisar" class="p-3 w-[420px] text-gray-300 border border-gray-500 rounded-xl">
-                    <button class="p-3 bg-gray-500 text-gray-300 hover:bg-gray-600 transition-colors rounded-xl cursor-pointer">
-                        Adicionar contato
-                    </button>
-                    <img src="images/block.svg" alt="" class="p-[14px] border border-gray-500 rounded-xl">
+                        <a class="p-3 bg-gray-500 text-gray-300 hover:bg-gray-600 transition-colors rounded-xl cursor-pointer">
+                            + Adicionar contato
+                        </a>
+                        <img src="images/block.svg" alt="" class="p-[14px] border border-gray-500 rounded-xl">
+                    </div>
+                </form>
+            </div>
+
+            <div class="h-[700px] mt-10 gap-10 flex items-center">
+                <div class="bg-lime-500 h-full w-[100px] flex flex-col items-center text-gray-700 text-xl py-2 rounded-2xl cursor-pointer">
+
+                    <a class="hover:scale-150 text-gray-800 transition-all">A</a>
+                    <a class="hover:scale-150 text-gray-800 transition-all">B</a>
+                    <a class="hover:scale-150 text-gray-800 transition-all">C</a>
+                    <a class="hover:scale-150 text-gray-800 transition-all">D</a>
+                    <a class="hover:scale-150 text-gray-800 transition-all">E</a>
+                    <a class="hover:scale-150 text-gray-800 transition-all">F</a>
+                    <a class="hover:scale-150 text-gray-800 transition-all">G</a>
+                    <a class="hover:scale-150 text-gray-800 transition-all">H</a>
+                    <a class="hover:scale-150 text-gray-800 transition-all">I</a>
+                    <a class="hover:scale-150 text-gray-800 transition-all">J</a>
+                    <a class="hover:scale-150 text-gray-800 transition-all">K</a>
+                    <a class="hover:scale-150 text-gray-800 transition-all">L</a>
+                    <a class="hover:scale-150 text-gray-800 transition-all">M</a>
+                    <a class="hover:scale-150 text-gray-800 transition-all">N</a>
+                    <a class="hover:scale-150 text-gray-800 transition-all">O</a>
+                    <a class="hover:scale-150 text-gray-800 transition-all">P</a>
+                    <a class="hover:scale-150 text-gray-800 transition-all">Q</a>
+                    <a class="hover:scale-150 text-gray-800 transition-all">R</a>
+                    <a class="hover:scale-150 text-gray-800 transition-all">S</a>
+                    <a class="hover:scale-150 text-gray-800 transition-all">T</a>
+                    <a class="hover:scale-150 text-gray-800 transition-all">U</a>
+                    <a class="hover:scale-150 text-gray-800 transition-all">V</a>
+                    <a class="hover:scale-150 text-gray-800 transition-all">X</a>
+                    <a class="hover:scale-150 text-gray-800 transition-all">Z</a>
+
+                </div>
+
+                <div class="w-full h-full">
+                    <div class="border-b border-gray-600">
+                        <h1 class="mb-8 text-2xl text-gray-200 font-bold">C</h1>
+                    </div>
+
+                    <div class="flex items-center justify-start gap-80">
+                    <div class="flex flex-col mt-6 w-[200px]">
+                        <h1 class="text-xl text-gray-400">Nome</h1>
+                    </div>
+
+                    <div class="flex gap-35">
+                        <span>
+                        <h1 class="text-xl text-gray-400 w-[100px]">Telefone</h1>
+                        </span>
+
+                        <span>
+                        <h1 class="text-xl text-gray-400 w-[200px]">Email</h1>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="flex items-center justify-start gap-80">
+                    <div class="flex flex-col max-w-[200px]">
+                        <h1 class="text-lg text-gray-200 w-[400px] mt-4">Nome do contato</h1>
+                        <h1 class="text-gray-400">Colega</h1>
+                    </div>
+
+                    <div class="flex">
+                        <span>
+                        <h1 class="text-lg text-gray-200 w-[244px]">(99)9 9999999</h1>
+                        </span>
+
+                        <span class="max-w-[100px]">
+                        <h1 class="text-lg text-gray-200 max-w-[244px]">email@email.com</h1>
+                        </span>
+                    </div>
+
+                    <div class="flex gap-2">
+                        <button class="flex items-center text-gray-200 gap-2 border border-gray-600 px-3 py-2 rounded-xl hover:bg-gray-600
+                        transition-colors cursor-pointer">
+                            <img src="images/edit.svg" alt="" class="w-4 h-4">
+                            Editar
+                        </button>
+                        
+                        <button class="flex items-center text-gray-200 gap-2 border border-gray-600 px-3 py-2 rounded-xl hover:bg-gray-600
+                        transition-colors cursor-pointer">
+                            <img src="images/openBlock.svg" alt="" class="w-4 h-4">
+                        </button>
+
+                        <button class="flex items-center text-gray-200 gap-2 border border-gray-600 px-3 py-2 rounded-xl hover:bg-gray-600
+                        transition-colors cursor-pointer">
+                            <img src="images/trash.svg" alt="" class="w-4 h-4">
+                        </button>
+                    </div>
+
+                </div>
+                <div class="border-b border-gray-600 w-full mt-6"></div>
+                    
                 </div>
             </div>
         </div>
