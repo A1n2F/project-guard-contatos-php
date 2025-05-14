@@ -7,6 +7,7 @@ use App\Controllers\LoginController;
 use App\Controllers\DashboardController;
 use App\Controllers\LogoutController;
 use App\Controllers\RegisterController;
+use App\Controllers\Contatos\CriarController;
 
 (new Route())
     ->get('/', IndexController::class)
@@ -15,6 +16,9 @@ use App\Controllers\RegisterController;
     ->post('/login', [ LoginController::class, 'login' ])
 
     ->get('/dashboard', DashboardController::class)
+    ->get('/contatos/criar', [CriarController::class, 'index'])
+    ->post('/contatos/criar', [CriarController::class, 'store'])
+
     ->get('/logout', LogoutController::class)
 
     ->get('/registrar', [ RegisterController::class, 'index' ])

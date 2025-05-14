@@ -6,9 +6,9 @@
             </div>
 
             <div class="flex flex-col gap-3">
-                <img src="images/user.svg" alt="" class="p-3 bg-[#1B1B1B] rounded-xl">
+                <img src="images/userOpen.svg" alt="" class="p-3 bg-[#1B1B1B] rounded-xl">
 
-                <img src="images/engineer.svg" alt="" class="p-3 bg-[#1B1B1B] rounded-xl">
+                <img src="images/engineer.svg" alt="" class="p-3 bg-[#1B1B1B] rounded-xl hover:bg-lime-500 transition-colors cursor-pointer">
                 <a href="/logout" class="hover:scale-110 bg-[#1B1B1B] p-3 rounded-xl hover:bg-lime-500 transition-colors">
                     <img src="images/logout.svg" alt="">
                 </a>
@@ -34,7 +34,7 @@
                             class="p-3 w-[420px] text-gray-300 border border-gray-500 rounded-xl" 
                         />
 
-                        <a class="p-3 bg-gray-500 text-gray-300 hover:bg-gray-600 transition-colors rounded-xl cursor-pointer">
+                        <a href="/contatos/criar" class="p-3 bg-gray-500 text-gray-300 hover:bg-gray-600 transition-colors rounded-xl cursor-pointer">
                             + Adicionar contato
                         </a>
                         <img src="images/block.svg" alt="" class="p-[14px] border border-gray-500 rounded-xl">
