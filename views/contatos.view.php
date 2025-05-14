@@ -37,7 +37,9 @@
                         <a href="/contatos/criar" class="p-3 bg-gray-500 text-gray-300 hover:bg-gray-600 transition-colors rounded-xl cursor-pointer">
                             + Adicionar contato
                         </a>
-                        <img src="images/block.svg" alt="" class="p-[14px] border border-gray-500 rounded-xl">
+                        <a href="/mostrar" class="bg-gray-500 p-[15px] text-gray-300 hover:bg-gray-600 transition-colors rounded-xl cursor-pointer">
+                            <img src="images/block.svg" alt="">
+                        </a>
                     </div>
                 </form>
             </div>
@@ -45,30 +47,7 @@
             <div class="h-[700px] mt-10 gap-10 flex items-center">
                 <div class="bg-lime-500 h-full w-[100px] flex flex-col items-center text-gray-700 text-xl py-2 rounded-2xl cursor-pointer">
 
-                    <a class="hover:scale-150 text-gray-800 transition-all">A</a>
-                    <a class="hover:scale-150 text-gray-800 transition-all">B</a>
-                    <a class="hover:scale-150 text-gray-800 transition-all">C</a>
-                    <a class="hover:scale-150 text-gray-800 transition-all">D</a>
-                    <a class="hover:scale-150 text-gray-800 transition-all">E</a>
-                    <a class="hover:scale-150 text-gray-800 transition-all">F</a>
-                    <a class="hover:scale-150 text-gray-800 transition-all">G</a>
-                    <a class="hover:scale-150 text-gray-800 transition-all">H</a>
-                    <a class="hover:scale-150 text-gray-800 transition-all">I</a>
-                    <a class="hover:scale-150 text-gray-800 transition-all">J</a>
-                    <a class="hover:scale-150 text-gray-800 transition-all">K</a>
-                    <a class="hover:scale-150 text-gray-800 transition-all">L</a>
-                    <a class="hover:scale-150 text-gray-800 transition-all">M</a>
-                    <a class="hover:scale-150 text-gray-800 transition-all">N</a>
-                    <a class="hover:scale-150 text-gray-800 transition-all">O</a>
-                    <a class="hover:scale-150 text-gray-800 transition-all">P</a>
-                    <a class="hover:scale-150 text-gray-800 transition-all">Q</a>
-                    <a class="hover:scale-150 text-gray-800 transition-all">R</a>
-                    <a class="hover:scale-150 text-gray-800 transition-all">S</a>
-                    <a class="hover:scale-150 text-gray-800 transition-all">T</a>
-                    <a class="hover:scale-150 text-gray-800 transition-all">U</a>
-                    <a class="hover:scale-150 text-gray-800 transition-all">V</a>
-                    <a class="hover:scale-150 text-gray-800 transition-all">X</a>
-                    <a class="hover:scale-150 text-gray-800 transition-all">Z</a>
+                    <?php require base_path('views/partials/_list.view.php'); ?>
 
                 </div>
 

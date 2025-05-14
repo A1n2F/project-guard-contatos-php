@@ -8,7 +8,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body class="bg-black">
-    
+
     <?php require "../views/{$view}.view.php"; ?>
 
 </body>

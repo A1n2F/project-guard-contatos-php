@@ -6,7 +6,7 @@
             </div>
 
             <div class="flex flex-col gap-3">
-                <a href="/dashboard" class="hover:scale-110 bg-[#1B1B1B] p-3 rounded-xl hover:bg-lime-500 transition-colors">
+                <a href="/contatos" class="hover:scale-110 bg-[#1B1B1B] p-3 rounded-xl hover:bg-lime-500 transition-colors">
                     <img src="../images/user.svg" alt="">
                 </a>
                 
