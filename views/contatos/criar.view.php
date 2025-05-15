@@ -45,6 +45,7 @@
                                 type="text" 
                                 placeholder="Nome do contato" 
                                 class="border border-gray-600 text-gray-300 w-full px-3 py-2 rounded-xl focus:outline-none"
+                                value="<?=$contatoSelecionado->nome?>"
                             />
 
                             <?php if(isset($validacoes['nome'])): ?>
@@ -62,6 +63,7 @@
                                 type="text" 
                                 placeholder="Status do contato" 
                                 class="border border-gray-600 text-gray-300 w-full px-3 py-2 rounded-xl focus:outline-none"
+                                value="<?=$contatoSelecionado->status?>"
                             />
 
                             <?php if(isset($validacoes['status'])): ?>
@@ -79,6 +81,7 @@
                                 type="text" 
                                 placeholder="Telefone do contato" 
                                 class="border border-gray-600 text-gray-300 w-full px-3 py-2 rounded-xl focus:outline-none"
+                                value="<?=$contatoSelecionado->telefone?>"
                             />
 
                             <?php if(isset($validacoes['telefone'])): ?>
@@ -96,6 +99,7 @@
                                 type="email" 
                                 placeholder="Email do contato" 
                                 class="border border-gray-600 text-gray-300 w-full px-3 py-2 rounded-xl focus:outline-none"
+                                value="<?=$contatoSelecionado->email?>"
                             />
 
                             <?php if(isset($validacoes['email'])): ?>

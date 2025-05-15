@@ -1,24 +1,24 @@
-<a class="hover:scale-150 text-gray-800 transition-all">A</a>
-<a class="hover:scale-150 text-gray-800 transition-all">B</a>
-<a class="hover:scale-150 text-gray-800 transition-all">C</a>
-<a class="hover:scale-150 text-gray-800 transition-all">D</a>
-<a class="hover:scale-150 text-gray-800 transition-all">E</a>
-<a class="hover:scale-150 text-gray-800 transition-all">F</a>
-<a class="hover:scale-150 text-gray-800 transition-all">G</a>
-<a class="hover:scale-150 text-gray-800 transition-all">H</a>
-<a class="hover:scale-150 text-gray-800 transition-all">I</a>
-<a class="hover:scale-150 text-gray-800 transition-all">J</a>
-<a class="hover:scale-150 text-gray-800 transition-all">K</a>
-<a class="hover:scale-150 text-gray-800 transition-all">L</a>
-<a class="hover:scale-150 text-gray-800 transition-all">M</a>
-<a class="hover:scale-150 text-gray-800 transition-all">N</a>
-<a class="hover:scale-150 text-gray-800 transition-all">O</a>
-<a class="hover:scale-150 text-gray-800 transition-all">P</a>
-<a class="hover:scale-150 text-gray-800 transition-all">Q</a>
-<a class="hover:scale-150 text-gray-800 transition-all">R</a>
-<a class="hover:scale-150 text-gray-800 transition-all">S</a>
-<a class="hover:scale-150 text-gray-800 transition-all">T</a>
-<a class="hover:scale-150 text-gray-800 transition-all">U</a>
-<a class="hover:scale-150 text-gray-800 transition-all">V</a>
-<a class="hover:scale-150 text-gray-800 transition-all">X</a>
-<a class="hover:scale-150 text-gray-800 transition-all">Z</a>
+<a href="/contatos?pesquisar=<?=isset($_GET['pesquisar']) ? 'a' : ''?>" class="hover:scale-150 text-gray-800 transition-all">A</a>
+<a href="/contatos?pesquisar=<?=isset($_GET['pesquisar']) ? 'b' : ''?>" class="hover:scale-150 text-gray-800 transition-all">B</a>
+<a href="/contatos?pesquisar=<?=isset($_GET['pesquisar']) ? 'c' : ''?>" class="hover:scale-150 text-gray-800 transition-all">C</a>
+<a href="/contatos?pesquisar=<?=isset($_GET['pesquisar']) ? 'd' : ''?>" class="hover:scale-150 text-gray-800 transition-all">D</a>
+<a href="/contatos?pesquisar=<?=isset($_GET['pesquisar']) ? 'e' : ''?>" class="hover:scale-150 text-gray-800 transition-all">E</a>
+<a href="/contatos?pesquisar=<?=isset($_GET['pesquisar']) ? 'f' : ''?>" class="hover:scale-150 text-gray-800 transition-all">F</a>
+<a href="/contatos?pesquisar=<?=isset($_GET['pesquisar']) ? 'g' : ''?>" class="hover:scale-150 text-gray-800 transition-all">G</a>
+<a href="/contatos?pesquisar=<?=isset($_GET['pesquisar']) ? 'h' : ''?>" class="hover:scale-150 text-gray-800 transition-all">H</a>
+<a href="/contatos?pesquisar=<?=isset($_GET['pesquisar']) ? 'i' : ''?>" class="hover:scale-150 text-gray-800 transition-all">I</a>
+<a href="/contatos?pesquisar=<?=isset($_GET['pesquisar']) ? 'j' : ''?>" class="hover:scale-150 text-gray-800 transition-all">J</a>
+<a href="/contatos?pesquisar=<?=isset($_GET['pesquisar']) ? 'k' : ''?>" class="hover:scale-150 text-gray-800 transition-all">K</a>
+<a href="/contatos?pesquisar=<?=isset($_GET['pesquisar']) ? 'l' : ''?>" class="hover:scale-150 text-gray-800 transition-all">L</a>
+<a href="/contatos?pesquisar=<?=isset($_GET['pesquisar']) ? 'm' : ''?>" class="hover:scale-150 text-gray-800 transition-all">M</a>
+<a href="/contatos?pesquisar=<?=isset($_GET['pesquisar']) ? 'n' : ''?>" class="hover:scale-150 text-gray-800 transition-all">N</a>
+<a href="/contatos?pesquisar=<?=isset($_GET['pesquisar']) ? 'o' : ''?>" class="hover:scale-150 text-gray-800 transition-all">O</a>
+<a href="/contatos?pesquisar=<?=isset($_GET['pesquisar']) ? 'p' : ''?>" class="hover:scale-150 text-gray-800 transition-all">P</a>
+<a href="/contatos?pesquisar=<?=isset($_GET['pesquisar']) ? 'q' : ''?>" class="hover:scale-150 text-gray-800 transition-all">Q</a>
+<a href="/contatos?pesquisar=<?=isset($_GET['pesquisar']) ? 'r' : ''?>" class="hover:scale-150 text-gray-800 transition-all">R</a>
+<a href="/contatos?pesquisar=<?=isset($_GET['pesquisar']) ? 's' : ''?>" class="hover:scale-150 text-gray-800 transition-all">S</a>
+<a href="/contatos?pesquisar=<?=isset($_GET['pesquisar']) ? 't' : ''?>" class="hover:scale-150 text-gray-800 transition-all">T</a>
+<a href="/contatos?pesquisar=<?=isset($_GET['pesquisar']) ? 'u' : ''?>" class="hover:scale-150 text-gray-800 transition-all">U</a>
+<a href="/contatos?pesquisar=<?=isset($_GET['pesquisar']) ? 'v' : ''?>" class="hover:scale-150 text-gray-800 transition-all">V</a>
+<a href="/contatos?pesquisar=<?=isset($_GET['pesquisar']) ? 'x' : ''?>" class="hover:scale-150 text-gray-800 transition-all">X</a>
+<a href="/contatos?pesquisar=<?=isset($_GET['pesquisar']) ? 'z' : ''?>" class="hover:scale-150 text-gray-800 transition-all">Z</a>

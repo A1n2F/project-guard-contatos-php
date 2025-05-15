@@ -16,7 +16,7 @@
 
             <div class="text-center">
                 <h1 class="text-gray-400">Logado como:</h1>
-                <h1 class="text-gray-200"><?=$user->nome?></h1>
+                <h1 class="text-gray-200"><?=auth()->nome?></h1>
             </div>
         </div>
     </div>
@@ -76,46 +76,8 @@
                     </div>
                 </div>
     
-                <?php foreach($contatos as $contato): ?>
-                <div class="flex items-center justify-start gap-80">
-
-                    <div class="flex flex-col max-w-[200px]">
-                        <h1 class="text-lg text-gray-200 w-[400px] mt-4"><?=$contato->nome?></h1>
-                        <h1 class="text-gray-400"><?=$contato->status?></h1>
-                    </div>
-
-                    <div class="flex">
-                        <span>
-                        <h1 class="text-lg text-gray-200 w-[244px]"><?=$contato->telefone?></h1>
-                        </span>
-
-                        <span class="max-w-[100px]">
-                        <h1 class="text-lg text-gray-200 max-w-[244px]"><?=$contato->email?></h1>
-                        </span>
-                    </div>
-
-                    <div class="flex gap-2">
-                        <button class="flex items-center text-gray-200 gap-2 border border-gray-600 px-3 py-2 rounded-xl hover:bg-gray-600
-                        transition-colors cursor-pointer">
-                            <img src="images/edit.svg" alt="" class="w-4 h-4">
-                            Editar
-                        </button>
-                        
-                        <button class="flex items-center text-gray-200 gap-2 border border-gray-600 px-3 py-2 rounded-xl hover:bg-gray-600
-                        transition-colors cursor-pointer">
-                            <img src="images/openBlock.svg" alt="" class="w-4 h-4">
-                        </button>
-
-                        <button class="flex items-center text-gray-200 gap-2 border border-gray-600 px-3 py-2 rounded-xl hover:bg-gray-600
-                        transition-colors cursor-pointer">
-                            <img src="images/trash.svg" alt="" class="w-4 h-4">
-                        </button>
-                    </div>
-
-                </div>
-                <div class="border-b border-gray-700 w-full mt-6"></div>
-                <?php endforeach; ?>
-                    
+                
+                  <h1 class="text-2xl text-gray-200 text-center mt-30">Nenhum contato encontrado.</h1> 
                 </div>
             </div>
         </div>
