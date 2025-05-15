@@ -1,3 +1,5 @@
+<?php $validacoes = flash()->get('validacoes'); ?>
+
 <div class="flex items-center mr-16">
     <div class="w-[160px] h-screen">
         <div class="flex flex-col items-center justify-between h-full py-12">
@@ -28,7 +30,7 @@
         <div class="bg-[#1B1B1B] w-full h-full rounded-4xl p-10">
             <div class="flex items-center justify-between">
                 <h1 class="text-gray-200 text-3xl font-bold">Criar Contato</h1>
-                        <a href="/dashboard" class="text-gray-300 hover:text-lime-500 transition-colors rounded-xl cursor-pointer">
+                        <a href="/contatos" class="text-gray-300 hover:text-lime-500 transition-colors rounded-xl cursor-pointer">
                             Voltar
                         </a>
             </div>
@@ -39,37 +41,69 @@
                         <label>
                             <h1 class="text-xl text-gray-200 font-bold mb-2">Nome</h1>
                             <input
+                                name="nome"
                                 type="text" 
                                 placeholder="Nome do contato" 
                                 class="border border-gray-600 text-gray-300 w-full px-3 py-2 rounded-xl focus:outline-none"
                             />
+
+                            <?php if(isset($validacoes['nome'])): ?>
+                                <span class="flex items-center gap-2 mt-2">
+                                    <img src="../images/error.svg" alt="">
+                                    <p class="text-red-400"><?=$validacoes['nome'][0]?></p>
+                                </span>
+                            <?php endif; ?>
                         </label>
 
                         <label>
                             <h1 class="text-xl text-gray-200 font-bold mb-2">Status</h1>
                             <input
+                                name="status"
                                 type="text" 
                                 placeholder="Status do contato" 
                                 class="border border-gray-600 text-gray-300 w-full px-3 py-2 rounded-xl focus:outline-none"
                             />
+
+                            <?php if(isset($validacoes['status'])): ?>
+                                <span class="flex items-center gap-2 mt-2">
+                                    <img src="../images/error.svg" alt="">
+                                    <p class="text-red-400"><?=$validacoes['status'][0]?></p>
+                                </span>
+                            <?php endif; ?>
                         </label>
 
                         <label>
                             <h1 class="text-xl text-gray-200 font-bold mb-2">Telefone</h1>
                             <input
+                                name="telefone"
                                 type="text" 
                                 placeholder="Telefone do contato" 
                                 class="border border-gray-600 text-gray-300 w-full px-3 py-2 rounded-xl focus:outline-none"
                             />
+
+                            <?php if(isset($validacoes['telefone'])): ?>
+                                <span class="flex items-center gap-2 mt-2">
+                                    <img src="../images/error.svg" alt="">
+                                    <p class="text-red-400"><?=$validacoes['telefone'][0]?></p>
+                                </span>
+                            <?php endif; ?>
                         </label>
 
                         <label>
                             <h1 class="text-xl text-gray-200 font-bold mb-2">Email</h1>
                             <input
+                                name="email"
                                 type="email" 
                                 placeholder="Email do contato" 
                                 class="border border-gray-600 text-gray-300 w-full px-3 py-2 rounded-xl focus:outline-none"
                             />
+
+                            <?php if(isset($validacoes['email'])): ?>
+                                <span class="flex items-center gap-2 mt-2">
+                                    <img src="../images/error.svg" alt="">
+                                    <p class="text-red-400"><?=$validacoes['email'][0]?></p>
+                                </span>
+                            <?php endif; ?>
                         </label>
 
                         <div class="flex justify-end">

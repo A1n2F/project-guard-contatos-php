@@ -25,7 +25,7 @@
         <div class="bg-[#1B1B1B] w-full h-full rounded-4xl p-10">
             <div class="flex items-center justify-between">
                 <h1 class="text-gray-200 text-3xl font-bold">Lista de contatos</h1>
-                <form action="">
+                <form action="" class="flex flex-col relative">
                     <div class="flex items-center gap-3">
                         <input 
                             name="pesquisar" 
@@ -40,6 +40,10 @@
                         <a href="/mostrar" class="bg-gray-500 p-[15px] text-gray-300 hover:bg-gray-600 transition-colors rounded-xl cursor-pointer">
                             <img src="images/block.svg" alt="">
                         </a>
+                    </div>
+
+                    <div class="w-full absolute right-90 top-2">
+                        <?php require base_path('views/partials/_mensagem.view.php'); ?>
                     </div>
                 </form>
             </div>
@@ -56,8 +60,8 @@
                         <h1 class="mb-8 text-2xl text-gray-200 font-bold">C</h1>
                     </div>
 
-                    <div class="flex items-center justify-start gap-80">
-                    <div class="flex flex-col mt-6 w-[200px]">
+                    <div class="flex items-center justify-start gap-80 mt-6">
+                    <div class="flex flex-col w-[200px]">
                         <h1 class="text-xl text-gray-400">Nome</h1>
                     </div>
 
