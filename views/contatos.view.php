@@ -32,7 +32,7 @@
                             type="text" 
                             placeholder="Pesquisar" 
                             class="p-3 w-[420px] text-gray-300 border border-gray-500 rounded-xl" 
-                            value="<?=isset($_GET['pesquisar']) ? $_GET['pesquisar'] : ''?>"
+                            value="<?=request()->get('pesquisar', '')?>"
                         />
 
                         <a href="/contatos/criar" class="p-3 bg-gray-500 text-gray-300 hover:bg-gray-600 transition-colors rounded-xl cursor-pointer">
@@ -57,7 +57,7 @@
 
                 <div class="w-full h-full">
                     <div class="border-b border-gray-600">
-                        <h1 class="mb-8 text-2xl text-gray-200 font-bold"><?=isset($_GET['pesquisar']) ? $_GET['pesquisar'] : ''?></h1>
+                        <h1 class="mb-8 text-2xl text-gray-200 font-bold"><?=request()->get('pesquisar', '')?></h1>
                     </div>
 
                     <div class="flex items-center justify-start gap-80 mt-6">

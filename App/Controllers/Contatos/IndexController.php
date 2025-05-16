@@ -6,16 +6,9 @@ use App\Models\Contato;
 
 class IndexController {
     public function __invoke() {
-
-        $pesquisar = isset($_GET['pesquisar']) ? $_GET['pesquisar'] : null;
-        $contatos = Contato::all($pesquisar);
-
-        $id = isset($_GET['id']) ? $_GET['id'] : (sizeof($contatos) > 0 ? $contatos[0]->id : null);
-
-        $filtro = array_filter($contatos, fn($c) => $c->id == $id);
-        $contatoSelecionado = array_pop($filtro);
-
-        if(!$contatoSelecionado) {
+        $contatos = Contato::all(request()->get('pesquisar', null));
+        
+        if(!$contatoSelecionado = $this->getContatoSelecionado($contatos)) {
             return view('contatos/nao-encontrado');
         }
 
@@ -24,6 +17,13 @@ class IndexController {
             'contatos' => $contatos,
             'contatoSelecionado' => $contatoSelecionado
         ]);
+    }
+
+    private function getContatoSelecionado($contatos) {
+        $id = request()->get('id', (sizeof($contatos) > 0 ? $contatos[0]->id : null));
+
+        $filtro = array_filter($contatos, fn($c) => $c->id == $id);
+        return array_pop($filtro);
     }
 }
 
