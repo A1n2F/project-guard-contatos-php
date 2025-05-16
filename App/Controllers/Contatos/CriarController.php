@@ -11,7 +11,7 @@ class CriarController {
     }
 
     public function store() {
-         $validacao = Validacao::validar([
+        $validacao = Validacao::validar([
             'nome' => ['required', 'min:3', 'max:20'],
             'status' => ['required'],
             'telefone' => ['required'],

@@ -1,9 +1,9 @@
 <div class="flex items-center mr-16">
     <div class="w-[160px] h-screen">
         <div class="flex flex-col items-center justify-between h-full py-12">
-            <div>
+            <a href="/contatos">
                 <img src="images/logoSemNome.svg" alt="">
-            </div>
+            </a>
 
             <div class="flex flex-col gap-3">
                 <img src="images/userOpen.svg" alt="" class="p-3 bg-[#1B1B1B] rounded-xl">

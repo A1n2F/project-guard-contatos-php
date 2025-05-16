@@ -1,9 +1,9 @@
 <div class="flex items-center mr-16">
     <div class="w-[160px] h-screen">
         <div class="flex flex-col items-center justify-between h-full py-12">
-            <div>
+            <a href="/contatos">
                 <img src="images/logoSemNome.svg" alt="">
-            </div>
+            </a>
 
             <div class="flex flex-col gap-3">
                 <img src="images/userOpen.svg" alt="" class="p-3 bg-[#1B1B1B] rounded-xl">
@@ -93,13 +93,14 @@
                         <h1 class="text-lg text-gray-200 max-w-[244px]"><?=$contato->email?></h1>
                         </span>
                     </div>
-
+                    
+                    
                     <div class="flex gap-2">
-                        <button class="flex items-center text-gray-200 gap-2 border border-gray-600 px-3 py-2 rounded-xl hover:bg-gray-600
+                        <a href="/contatos/atualizar" id="form-atualizacao" class="flex items-center text-gray-200 gap-2 border border-gray-600 px-3 py-2 rounded-xl hover:bg-gray-600
                         transition-colors cursor-pointer">
                             <img src="images/edit.svg" alt="" class="w-4 h-4">
                             Editar
-                        </button>
+                        </a>
                         
                         <button class="flex items-center text-gray-200 gap-2 border border-gray-600 px-3 py-2 rounded-xl hover:bg-gray-600
                         transition-colors cursor-pointer">
@@ -110,6 +111,7 @@
                         transition-colors cursor-pointer">
                             <img src="images/trash.svg" alt="" class="w-4 h-4">
                         </button>
+
                     </div>
 
                 </div>

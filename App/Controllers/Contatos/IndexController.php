@@ -8,11 +8,13 @@ class IndexController {
     public function __invoke() {
         $contatos = Contato::all(request()->get('pesquisar', null));
         
-        if(!$contatoSelecionado = $this->getContatoSelecionado($contatos)) {
+        $contatoSelecionado = $this->getContatoSelecionado($contatos);
+
+        if(!$contatoSelecionado) {
             return view('contatos/nao-encontrado');
         }
 
-        return view('contatos', [
+        return view('contatos/index', [
             'user' => auth(),
             'contatos' => $contatos,
             'contatoSelecionado' => $contatoSelecionado

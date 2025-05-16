@@ -5,6 +5,7 @@ use Core\Route;
 use App\Controllers\IndexController;
 use App\Controllers\LoginController;
 use App\Controllers\Contatos;
+use App\Controllers\Contatos\AtualizarController;
 use App\Controllers\LogoutController;
 use App\Controllers\RegisterController;
 use App\Controllers\Contatos\CriarController;
@@ -26,5 +27,8 @@ use App\Middlewares\GuestMiddleware;
     ->get('/contatos', Contatos\IndexController::class, AuthMiddleware::class)
     ->get('/contatos/criar', [CriarController::class, 'index'], AuthMiddleware::class)
     ->post('/contatos/criar', [CriarController::class, 'store'], AuthMiddleware::class)
+    
+    ->put('/contatos/atualizar', Contatos\AtualizarController::class, AuthMiddleware::class)
+    ->get('/contatos/atualizar', [Contatos\AtualizarController::class, 'index'], AuthMiddleware::class)
 
     ->run();

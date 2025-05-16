@@ -29,7 +29,7 @@
     <div class="w-full h-screen py-10">
         <div class="bg-[#1B1B1B] w-full h-full rounded-4xl p-10">
             <div class="flex items-center justify-between">
-                <h1 class="text-gray-200 text-3xl font-bold">Criar Contato</h1>
+                <h1 class="text-gray-200 text-3xl font-bold">Atualizar Contato</h1>
                         <a href="/contatos" class="text-gray-300 hover:text-lime-500 transition-colors rounded-xl cursor-pointer">
                             Voltar
                         </a>
@@ -37,7 +37,9 @@
 
             <div class="h-[700px] mt-10 gap-10 flex items-center justify-center">
                 <div class="w-[575px] h-[570px] ">
-                    <form action="/contatos/criar" method="post" class="flex flex-col space-y-5">
+                    <form action="/contatos/atualizar" method="post" id="form-atualizacao" class="flex flex-col space-y-5">
+                        <input type="hidden" name="__method" value="PUT" />
+                        <input type="hidden" name="id" />
                         <label>
                             <h1 class="text-xl text-gray-200 font-bold mb-2">Nome</h1>
                             <input
@@ -45,7 +47,7 @@
                                 type="text" 
                                 placeholder="Nome do contato" 
                                 class="border border-gray-600 text-gray-300 w-full px-3 py-2 rounded-xl focus:outline-none"
-                                value="<?=request()->get('pesquisar', '')?>"
+                                value="<?=request()->post('nome')?>"
                             />
 
                             <?php if(isset($validacoes['nome'])): ?>
@@ -63,7 +65,7 @@
                                 type="text" 
                                 placeholder="Status do contato" 
                                 class="border border-gray-600 text-gray-300 w-full px-3 py-2 rounded-xl focus:outline-none"
-                                value="<?=request()->get('pesquisar', '')?>"
+                                value="<?=request()->post('status')?>"
                             />
 
                             <?php if(isset($validacoes['status'])): ?>
@@ -81,7 +83,7 @@
                                 type="text" 
                                 placeholder="Telefone do contato" 
                                 class="border border-gray-600 text-gray-300 w-full px-3 py-2 rounded-xl focus:outline-none"
-                                value="<?=request()->get('pesquisar', '')?>"
+                                value="<?=request()->post('telefone')?>"
                             />
 
                             <?php if(isset($validacoes['telefone'])): ?>
@@ -99,7 +101,7 @@
                                 type="email" 
                                 placeholder="Email do contato" 
                                 class="border border-gray-600 text-gray-300 w-full px-3 py-2 rounded-xl focus:outline-none"
-                                value="<?=request()->get('pesquisar', '')?>"
+                                value="<?=request()->post('email')?>"
                             />
 
                             <?php if(isset($validacoes['email'])): ?>
@@ -111,8 +113,8 @@
                         </label>
 
                         <div class="flex justify-end">
-                            <button class="p-3 bg-gray-500 text-gray-300 w-20 hover:bg-lime-600 transition-colors rounded-xl cursor-pointer">
-                                Salvar
+                            <button type="submit" id="form-atualizacao" class="p-3 bg-gray-500 text-gray-300 w-20 hover:bg-lime-600 transition-colors rounded-xl cursor-pointer">
+                                Atualizar
                             </button>
                         </div>
                     </form>
